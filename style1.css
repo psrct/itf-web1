@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body {
+    background: url(https://c4.wallpaperflare.com/wallpaper/285/172/9/sunset-8k-forest-4k-wallpaper-preview.jpg);
+    background-size: cover;
+
+}
+.navbar {
+    margin: 60px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.logo {
+    color: black;
+    padding-left: 40px;
+}
+.selection ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 30px;
+}
+.selection a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.selection a :hover {
+    color: orange;
+}
+.imaging {
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgme {
+    width: 300px;
+    height: 300px;
+}
