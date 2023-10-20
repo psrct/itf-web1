@@ -6,14 +6,19 @@
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
+
 body {
+    justify-content: center;
     background: url(https://images8.alphacoders.com/133/1331544.png);
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     height: 100vh;
 }
+
 .navbar {
-    margin: 60px 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,22 +31,34 @@ body {
     color: black;
     padding-left: 40px;
 }
-.selection ul {
-    list-style-type: none;
-    display: flex;
-    padding-right: 30px;
-}
-.selection a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    padding-right: 20px;
+
+.logo h1 {
+    font-size: 50px;
 }
 
-.selection a :hover {
-    color: orange;
+.navbar .selection {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+a:hover {
+    color: rgb(40, 89, 253);
+}
+
 .imaging {
     padding:50px;
     display: flex;
@@ -50,8 +67,8 @@ body {
 }
 .imgme {
     border: 2px white solid;
-    width: 300px;
-    height: 300px;
+    width: 400x;
+    height: 400px;
 }
 
 .introduce {
@@ -60,10 +77,11 @@ body {
 
 #intro {
     color: white;
+    font-size: 50px;
 }
 
 #info {
-    font-size: 20px;
+    font-size: 30px;
     color: aliceblue;
 }
 
@@ -80,10 +98,31 @@ span {
     padding-top: 10px;
 }
 
+.logocon a {
+    padding-right: 20px;
+}
+
 .bggit {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background: rgb(250, 254, 255);
     border: 2px black solid;
     border-radius: 10px;
 }
+
+/* Responsive */
+/* @media (max-width: 1280px) { */
+    /* ทำให้เมนูหาย */
+    /* .navbar .selection {
+        display: none;
+    }
+
+    /* ทำให้มีแค่ toggle */
+    /* .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+} */

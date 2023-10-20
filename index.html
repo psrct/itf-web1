@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Resume</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <h1>Resume</h1>
-        </div>
-        <div class="selection">
-            <ul>
-                <li><a href="#">introduce</a></li>
+    <head class="sticky">
+        <div class="navbar">
+            <div class="logo"><h1>Resume</h1></div>
+            <ul class="selection">
+                <li><a href="#introduce">introduce</a></li>
                 <li><a href="#">eduction</a></li>
                 <li><a href="#">activity</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
-    </div>
+            <!-- toggle -->
+        <!-- <div class="dropdown_menu">
+            <li><a href="#introduce">introduce</a></li>
+            <li><a href="#">eduction</a></li>
+            <li><a href="#">activity</a></li>
+            <li><a href="#contact">contact</a></li>
+        </div> -->
+    </head>
 
     <div class="profile">
         <div class="imaging">
@@ -27,7 +33,7 @@
         </div>
     </div>
 
-    <div class="introduce">
+    <div class="introduce" id="introduce">
         <div class="header">
             <h1 id="intro">Introduce</h1>
             <p id="info">My name's <span>Sirachet Chotthakunanan</span> <br> My nickname's <span>Petch</span> , I'm 18 years old <br>
@@ -35,12 +41,14 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="cont"></div>
             <h1 id='intro'>Contact</h1>
             <div class="logocon">
-                <a href="https://github.com/psrct"><img class='bggit' src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+                <a href="https://github.com/psrct" target="_blank"><img class='bggit' src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+                <a href="https://www.instagram.com/sirxchet._.p/" target="_blank"><img class='bggit' src="./img/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" alt="instagram"></a>
             </div>
     </div>
+
 </body>
 </html>
