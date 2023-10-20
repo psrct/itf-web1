@@ -7,9 +7,10 @@
     font-family: 'Kanit', sans-serif;
 }
 body {
-    background: url(https://c4.wallpaperflare.com/wallpaper/285/172/9/sunset-8k-forest-4k-wallpaper-preview.jpg);
+    background: url(https://images8.alphacoders.com/133/1331544.png);
     background-size: cover;
-
+    /* background-position: center; */
+    height: 100vh;
 }
 .navbar {
     margin: 60px 60px;
@@ -48,6 +49,41 @@ body {
     justify-content: center;
 }
 .imgme {
+    border: 2px white solid;
     width: 300px;
     height: 300px;
+}
+
+.introduce {
+    padding-left: 30px;
+}
+
+#intro {
+    color: white;
+}
+
+#info {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+span {
+    color: rgb(0, 247, 255);
+}
+
+.contact {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.logocon {
+    padding-top: 10px;
+}
+
+.bggit {
+    width: 50px;
+    height: 50px;
+    background: rgb(250, 254, 255);
+    border: 2px black solid;
+    border-radius: 10px;
 }
