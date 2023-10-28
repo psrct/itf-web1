@@ -1,39 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
 }
 
 body {
+    height: 130vh;
     justify-content: center;
     background: url(https://images8.alphacoders.com/133/1331544.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
+/* Start Navbar */
 .navbar {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
-    border: 2px solid black;
-}
-
-.logo {
-    color: black;
-    padding-left: 40px;
-}
-
-.logo h1 {
-    font-size: 50px;
+    border: 2px solid rgb(40, 89, 253);
 }
 
 .navbar .selection {
@@ -43,21 +37,33 @@ body {
     font-weight: bold;
 }
 
+.logo {
+    color: black;
+    padding-left: 80px;
+}
+
+.logo h1 {
+    font-size: 40px;
+}
+
 li {
     list-style: none;
 }
 
-a {
+.selection a {
     text-decoration: none;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     padding-right: 30px;
 }
 
-a:hover {
+.selection a:hover {
     color: rgb(40, 89, 253);
 }
+
+/* End Navbar */
+/* Profile */
 
 .imaging {
     padding:50px;
@@ -65,50 +71,198 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .imgme {
-    border: 2px white solid;
-    width: 400x;
-    height: 400px;
+    border: 3px rgb(40, 89, 253) solid;
+    border-radius: 20px;
+    height: 300px;
+}
+/* End Profile */
+/* Information */
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    padding-left: 9vh;
+    padding-right: 9vh;
+    padding-top: 5vh;
+    gap: 50px;
+    row-gap: 150px;
 }
 
-.introduce {
-    padding-left: 60px;
+.aboutme {
+    border: 3px rgb(40, 89, 253) solid;
+    background-color: white;
+    width: 620px;
+    height: 290px;
+    margin-left: 100px;
 }
 
-#intro {
-    color: white;
-    font-size: 50px;
+#allaboutme {
+    padding-top: 10px;
+    padding-left: 15px;
 }
 
-#info {
-    font-size: 30px;
-    color: aliceblue;
+#allaboutme h2 {
+    color: rgb(40, 89, 253);
 }
 
-span {
-    color: rgb(0, 247, 255);
+#allaboutme p {
+    color:gray;
 }
+
+#allaboutme span {
+    color: rgb(40, 89, 253);
+}
+/* End About ME */
+/* Start Contact Me */
 
 .contact {
-    padding-left: 60px;
-    padding-top: 30px;
+    border: 3px rgb(40, 89, 253) solid;
+    background-color: white;
+    width: 700px;
+    height: 290px;
 }
 
-.logocon {
+.allcontact {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.allcontact h2 {
+    color: rgb(40, 89, 253);
+}
+
+.allcontact p {
+    color:gray;
+}
+
+.smallcon {
+    padding-left: 10px;
     padding-top: 10px;
 }
 
-.logocon a {
+.smallcon img {
+    height: 30px;
+    width: 30px;
+}
+
+.smallcon .phone {
+    display: flex;
+    align-items: center;
+}
+
+.smallcon a:hover {
+    background-color: gray;
+}
+.smallcon a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.smallcon .email {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logocon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.sizecon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sizecon:hover {
+    background-color: gray;
+}
+
+/* End Contact Me */
+/* Start My Education */
+
+.education {
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px rgb(40, 89, 253) solid;
+    background-color: white;
+    width: 620px;
+    height: 200px;
+}
+
+.alleducation {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.alleducation h2 {
+    color: rgb(40, 89, 253);
+}
+
+.alleducation p {
+    color:gray;
+}
+
+.school {
+    border: 3px rgb(40, 89, 253) solid;
+    background-color: white;
+    width: 700px;
+}
+
+#kmitl {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+#kmitl a {
+    text-decoration: none;
+    color: black;
+}
+#kmitl img {
+    max-width: 100%;
+    height: 65px;
     padding-right: 20px;
 }
 
-.bggit {
-    width: 80px;
-    height: 80px;
-    background: rgb(250, 254, 255);
-    border: 2px black solid;
-    border-radius: 10px;
+#rattana {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
 }
+
+#rattana img {
+    max-width: 100%;
+    height: 65px;
+    padding-right: 20px;
+}
+
+#kheha {
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+}
+#kheha a {
+    text-decoration: none;
+    color: black;
+}
+
+#kheha img {
+    max-width: 100%;
+    height: 65px;
+    padding-right: 20px;
+}
+/* End Education */
 
 /* Responsive */
 /* @media (max-width: 1280px) { */
